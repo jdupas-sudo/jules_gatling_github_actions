@@ -17,3 +17,5 @@ It includes:
   demonstrating sufficient Gatling functionality
 * proper source file layout
 # jules_gatling_github_actions
+
+
