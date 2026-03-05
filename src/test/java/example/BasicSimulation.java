@@ -25,7 +25,7 @@ public class BasicSimulation extends Simulation {
 
   // Define assertions
   // Reference: https://docs.gatling.io/reference/script/core/assertions/
-  private static final Assertion assertion = global().failedRequests().count().lt(1L);
+  private static final Assertion assertion = global().responseTime().percentile(95).lt(10);
 
   // Define injection profile and execute the test
   // Reference: https://docs.gatling.io/reference/script/core/injection/
